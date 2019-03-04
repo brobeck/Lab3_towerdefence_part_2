@@ -1,0 +1,22 @@
+/*
+    Main CSS to style the GUI
+
+    . is used for elements
+    # is used for id's
+
+*/
+#canvasPane {
+    -fx-border-color:black;
+    -fx-border-width: 1;
+    -fx-border-style: solid;
+}
+
+.label {
+    -fx-padding: 10;
+    -fx-font: 20px "Arial";
+}
+
+#bottomLabel {
+    -fx-padding: 10;
+    -fx-font: 10px "Arial";
+}

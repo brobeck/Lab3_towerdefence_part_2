@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.HBox?>
+<!--
+        Top part of window, used for points and damage display
+-->
+<HBox xmlns:fx="http://javafx.com/fxml" fx:controller="edu.chl.hajo.td.control.TopCtrl">
+    <Label text="Points"/>
+    <Label fx:id="points" text="0"/>
+    <Label text="Damage"/>
+    <Label fx:id="damage" text="0"/>
+</HBox>
+
+
+

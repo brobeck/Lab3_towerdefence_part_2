@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+    The center animation area
+-->
+<?import javafx.scene.canvas.Canvas?>
+<?import javafx.scene.layout.Pane?>
+
+
+<Pane xmlns:fx="http://javafx.com/fxml" fx:id="canvasPane"
+      fx:controller="edu.chl.hajo.td.control.CenterCtrl"
+      onMouseClicked="#handleMouseClicked">
+    <!-- This is the only fixed size (same as GAME_WIDTH and GAME_HEIGHT) -->
+    <Canvas fx:id="foreground" width="640" height="640"/>
+    <Canvas fx:id="background" width="640" height="640"/>
+</Pane>
+

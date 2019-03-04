@@ -1,0 +1,40 @@
+{
+  "id" : 1,
+  "info": "Points (below) are on the grid, real coordinates calculated from tile size",
+  "tileMapFileName": "img/towerdefence.tmx",
+  "paths": [
+    {
+      "id": 0,
+      "points": [
+        "0,3",
+        "3,3",
+        "3,9",
+        "8,9",
+        "8,4",
+        "12,4",
+        "12,12",
+        "3,12",
+        "3,17",
+        "17,17",
+        "17,6",
+        "20,6"
+      ]
+    }
+  ],
+  "waves": [
+    {
+      "creepClassName": "Creep",
+      "nCreeps": 10,
+      "initDelay": 1000000,
+      "spawnPeriod": 1000000000,
+      "pathId": 0
+    },
+    {
+      "creepClassName": "Creep",
+      "nCreeps": 0,
+      "initDelay": 1000000,
+      "spawnPeriod": 1000000000,
+      "pathId": 0
+    }
+  ]
+}

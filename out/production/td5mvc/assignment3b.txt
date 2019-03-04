@@ -1,0 +1,52 @@
+
+*** Assignment 3b An MVC application for Tower Defence ***
+
+This assumes you have a working model from lab 3a.
+
+Now we're going to integrate our model into an MVC design.
+
+The task is to integrate the model into this application and then get the VC parts to work.
+This will result in a full MVC model.
+
+*** HAVE A CHECK WITH TA's that you model is appropriate before starting ***
+
+This is a NON-TRIVIAL task:
+- Work carefully with as isolated parts as possible.
+- Execute continuously to be able to revert erroneous changes
+- Use IntelliJ Refactor > Rename and Replace (Ctrl r)
+
+Workflow
+--------
+It should be possible to get the (non functional) application up and running.
+
+1.  Do inspect all code, read comments! Ask questions, clarify, ... before implementing!
+    Sketch some UML class diagram to have something to relate to. Sketch call paths start from GUI
+    and trace calls to objects. You can't grasp the whole application in you head!
+    How do the applications start up... sketch the call chains!
+
+2.  Integrate the model. This is done by
+    - Copying and replacing model classes from part a) of lab (in model package).
+    see TODO's
+    - Possibly rename classes/methods, add/modify constructors, etc.
+    - Uncomment in TDBuilder and Renderer, modify as needed.
+    - .. and possibly more ...
+
+3.  The start button in the GUI will call the RightControl class start method. In method try to
+    create the model and the game loop. Use the TDBuilder and ServiceLocator objects to access
+    what you need. This should make it possible to run the game in a similar fashion as part in a)
+    of this lab.
+
+4.  To get data from model to GUI (for example display player points), we use the Observer pattern, here
+    implemented as an EventBus. Use this to make the GUI display points and damage.
+
+5.  Add placement of Towers. This is all done by the control layer (adding a tower to the model).
+
+6.  When there is a Wave moving and at least one tower is aiming and shooting (and kill some creeps
+    so player get points) and some creep reaching the end of the path (adding damage) this assignment
+    is fulfilled (if design is acceptable).
+
+7. Optional: Refactor the file package to use the facade pattern.
+
+
+
+

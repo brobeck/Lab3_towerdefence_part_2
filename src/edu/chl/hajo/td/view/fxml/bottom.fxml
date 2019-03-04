@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+        Bottom panel (not used much)
+-->
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.control.Label?>
+<HBox xmlns:fx="http://javafx.com/fxml">
+    <Label fx:id="bottomLabel" text="NOT USED right now"/>
+</HBox>
+
+

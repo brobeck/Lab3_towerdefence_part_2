@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.VBox?>
+<!--
+        Right side area of Main window
+        This is the main controller area of the game
+
+-->
+
+<VBox xmlns:fx="http://javafx.com/fxml" fx:controller="edu.chl.hajo.td.control.RightCtrl">
+    <VBox>
+        <Button fx:id="start" text="Start" maxWidth="Infinity" onMouseClicked="#start"/>
+    </VBox>
+    <VBox fx:id="towerBtns">
+        <!-- fx:id's from Towers -->
+        <Button text="BasicGunTower" maxWidth="Infinity" fx:id="BASIC_GUN_TOWER" onAction="#selectTower"/>
+        <Button text="BasicImpactTower" maxWidth="Infinity" fx:id="BASIC_IMPACT_TOWER" onAction="#selectTower"/>
+    </VBox>
+</VBox>
+
+
